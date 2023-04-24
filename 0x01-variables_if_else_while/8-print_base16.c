@@ -1,23 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 0 to 9 
+ * main - prints all the numbers of base 16 in lowercase, followed
+ *        by a new line
  *
- * Return: Always 0 (Success)
+ * Return: exit successful.
  */
+
 int main(void)
 {
-	int inn;
+	unsigned char NumberHexadecimal;
 
-	for (inn  = 48; inn  < 58; inn++)
+	NumberHexadecimal = '0';
+	while (NumberHexadecimal != ('\n' + 1))
 	{
-		putchar(inn);
+		if (NumberHexadecimal == ('9' + 1))
+			NumberHexadecimal = 'a';
+		else if (NumberHexadecimal == ('f' + 1))
+			NumberHexadecimal = '\n';
+		putchar(NumberHexadecimal++);
 	}
-	for (inn  = 97; inn  < 103; inn++)
-	{
-		putchar(inn);
-	}
-	putchar('\n');
 	return (0);
 }
 
