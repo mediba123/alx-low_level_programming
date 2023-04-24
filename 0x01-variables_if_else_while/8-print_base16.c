@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Prints numbers between 0 to 9 
@@ -7,15 +7,15 @@ i#include <stdio.h>
  */
 int main(void)
 {
-	int in;
+	int inn;
 
-	for (in  = 48; in  < 58; in++)
+	for (inn  = 48; inn  < 58; inn++)
 	{
-		putchar(in);
+		putchar(inn);
 	}
-	for (in  = 97; in  < 103; in++)
+	for (inn  = 97; inn  < 103; inn++)
 	{
-		putchar(in);
+		putchar(inn);
 	}
 	putchar('\n');
 	return (0);
