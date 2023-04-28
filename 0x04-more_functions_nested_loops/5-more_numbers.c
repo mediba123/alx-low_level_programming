@@ -12,9 +12,9 @@ void more_numbers(void)
 	{
 		for (c = 0; c <= 14; c++)
 		{
-			if (x <= 10)
+			if (x >= 10)
 				_putchar(c / 10 + '0')
-					_putchar(x % 10 + '0')
+					_putchar(c % 10 + '0')
 		}
 		_putchar('\n');
 	}
