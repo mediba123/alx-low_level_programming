@@ -4,7 +4,7 @@ This repository contains projects completed as part of the low-level programming
 
 ## Projects
 
-### 0x00-hello_world
+### [0x00-hello_world](https://github.com/mediba123/alx-low_level_programming/tree/master/0x00-hello_world)
 
 This project focuses on the basics of the C programming language, including printing to standard output, compiling source code, and using header files.
 
