@@ -8,24 +8,24 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-int in = 0, x;
-int mat = 0;
+int i = 0, j;
+int matches = 0;
 
-while (s[in] != '\0') /*iterate through string*/
+while (s[i] != '\0') /*iterate through string*/
 {
 
-for (x = 0; accept[x] != '\0'; x++) /*iterate through target*/
+for (j = 0; accept[j] != '\0'; j++) /*iterate through target*/
 {
-if (s[in] == accept[x]) /*record & break at first match*/
+if (s[i] == accept[j]) /*record & break at first match*/
 {
-mat++;
+matches++;
 break;
 }
-if (accept[x + 1] == '\0' && s[in] != accept[x])
-return (mat);/*return if idx doesn't match*/
+if (accept[j + 1] == '\0' && s[i] != accept[j])
+return (matches);/*return if idx doesn't match*/
 }
 i++;
 }
-return (mat); /* return num if all match till end */
+return (matches); /* return num if all match till end */
 
 }
