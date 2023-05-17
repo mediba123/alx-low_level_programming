@@ -1,10 +1,19 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
+
+/**
+ * _isalpha - Return 1 if c is a letter. lowercase or uppercase
+ * @c: The in to print
+ * Return: Always 0.
+ */
 
 int _isalpha(int c)
 {
-	return (isalpha(c));
+if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
+{
+return (1);
+}
+else
+{
+return (0);
+}
 }
