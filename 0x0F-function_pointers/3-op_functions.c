@@ -1,31 +1,57 @@
-#include "3-calc.h"
-#include <stdio.h>
-#include <string.h>
+/**
+ * op_add - Adds two numbers
+ * @a: int 1
+ * @b: int 2
+ * Return: Returns result
+**/
+int op_add(int a, int b)
+{
+return (a + b);
+}
 
 /**
- * get_op_func - the compares function with pointer and returns the equal.
- * @s: the points a char
- * Return: the Returns the function and the operator when equal
+ * op_sub - subtracts two numbers
+ * @a: int 1
+ * @b: int 2
+ * Return: Returns result
+**/
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - Multiplies two numbers
+ * @a: int 1
+ * @b: int 2
+ * Return: Returns result
 **/
 
-int (*get_op_func(char *s))(int, int)
+int op_mul(int a, int b)
 {
-op_t ops[] = {
-{"+", op_add},
-{"-", op_sub},
-{"*", op_mul},
-{"/", op_div},
-{"%", op_mod},
-{NULL, NULL}
-};
-
-int i = 0;
-
-while (ops[i].op != NULL)
-{
-if (!strcmp(ops[i].op, s))
-return (ops[i].f);
-i++;
+return (a * b);
 }
-return (NULL);
+
+/**
+ * op_div - Divides two numbers
+ * @a: int 1
+ * @b: int 2
+ * Return: Returns result
+**/
+
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
+ * op_mod - Modules two numbers
+ * @a: int 1
+ * @b: int 2
+ * Return: Returns result
+**/
+
+int op_mod(int a, int b)
+{
+return (a % b);
 }
