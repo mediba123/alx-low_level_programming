@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * free_list - linked list should be free
- * @head: pointer 
+ * free_list - linked to free
+ * @head: it linked to pointer
  */
 void free_list(list_t *head)
 {
